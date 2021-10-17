@@ -31,7 +31,7 @@ Galaxy chromebooks are crazy nice machines if you don't need alot of compute pow
 
 
 
-Reasons maybe you shouldn't
+## Reasons maybe you shouldn't
 
 1\. Added complexity
 
