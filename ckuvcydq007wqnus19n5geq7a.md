@@ -27,6 +27,7 @@ Galaxy chromebooks are crazy nice machines if you don't need alot of compute pow
 ![PDP-GALLERY-XE930QCA-013-Side-Open-Red-1600x1200.webp](https://cdn.hashnode.com/res/hashnode/image/upload/v1634481706883/p_o7KMkR7.webp)
 
 
+On another equally awesome note, it's super easy to seamlessly switch computers with a cloud setup.  Next time your computer quits or you feel like switching from your desktop to your laptop, it's super easy to pick up where you left off!
 
 
 
