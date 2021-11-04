@@ -29,6 +29,11 @@ Where prune network removes parts that don't seem to have a big impact on the ou
 
 ## The code
 
+Several key notes about implementation
+- Prune based on stddev of a connections final layer output (ignoring ops that aren't leafs)
+- Evolve by generating a random connection
+- Op is sum or multiply, though can certainly choose other ops. 
+
 ### Op
 
 For our smallest unit, we have a specific op instance.  This basically represents using an op like sum or multiply on 2 values.  These 2 values may be a trainable parameter or an specific input column from the input matrix.  It outputs a 1d array of size (batchSize) that's the output of the operation.
