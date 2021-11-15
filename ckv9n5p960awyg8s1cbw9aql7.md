@@ -1,4 +1,4 @@
-## Kubernetes: Zero-downtime deployments
+## Zero-downtime deployments in Kubernetes
 
 First off let's define what zero-downtime deployments are.  I'll define it as follows
 
@@ -140,7 +140,9 @@ assert statusCodeCounts[200] > 0
 // Assert that all requests were status code 200
 assert len(statusCodeCounts) == 1 
 ```
-You can find a full code version  [here](https://github.com/jimmiebtlr/blog_code/blob/main/nailing_zero_downtime_deployments_in_k8s/tests/infra_test.go) .
+
+You can find a full code version  [here].
+ (https://github.com/jimmiebtlr/blog_code/blob/main/nailing_zero_downtime_deployments_in_k8s/tests/infra_test.go) .
 
 
 ## Conclusion
