@@ -1,4 +1,4 @@
-## Zero-downtime deployments in Kubernetes
+## K8s: Zero-downtime deployments
 
 First off let's define what zero-downtime deployments are.  I'll define it as follows
 
