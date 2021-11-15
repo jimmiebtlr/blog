@@ -92,7 +92,7 @@ b := a
 ```
 into
 ```
-a := b
+a := a
 ```
 
 This can effectively protect you from accidentally using the loop variable.
