@@ -1,4 +1,4 @@
-## Deep Learning Alternative Approach Idea
+## Deep Learning Alternative Approach
 
 Before we get started, I don't have great test results to show here.  I'm largely showing an idea I have, and the code I've created to experiment with it.  
 
