@@ -86,6 +86,17 @@ func main() {
 }```
  [Playground](https://play.golang.org/p/7deMeSXDrve) 
 
+An important variation on the above, you can also shadow the loop variable by changing 
+```
+b := a 
+```
+into
+```
+a := b
+```
+
+This can effectively protect you from accidentally using the loop variable.
+[Playground](https://play.golang.org/p/0iEzP1BeraD)
 
 ### Conclusion
 
