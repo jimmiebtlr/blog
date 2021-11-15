@@ -48,7 +48,7 @@ func main() {
 
 ### What?
 
-When you loop over a slice or array, the variable that is the value has the same address on each iteration.  Using that address rather than evaluating immediately will cause the values to be the last in the array (or a more complex/racey behavior if it's evaluating while loop is running).
+When you loop over a slice or array, the loop variable has the same address on each iteration.  Using that address rather than evaluating immediately will cause the values to be the last in the array (or a more complex/racey behavior if it's evaluating while loop is running).
 
 ### How to fix this
 
