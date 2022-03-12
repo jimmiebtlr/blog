@@ -12,7 +12,7 @@ Short version: Check out the [playground](https://gotipplay.golang.org/p/sUqxE-C
 
 ## What we'll build
 
-At the end of this post we'll be able to do this
+At the end of this post we'll be able to do the following, where `WidgetPutRoute` is a struct that contains the route param/query param data, and `WidgetPut` is a struct containing the data from the body of the request.
 ```golang
 func widgetPutHandler(req Request, route *WidgetPutRoute, widget *WidgetPut) {
 	req.Render(http.StatusOK, widget)
