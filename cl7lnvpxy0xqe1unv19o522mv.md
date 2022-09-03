@@ -1,4 +1,4 @@
-## ML Log - 03-14-2022 - Basic graph generation environment
+## ML Experiment Log - Differentiable graph environment
 
 I'm interested in generative design, especially geometric deep learning.  
 
