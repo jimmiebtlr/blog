@@ -80,7 +80,7 @@ To calculate our loss we'll loop through all our examples and add them together.
 
 I've tried quite a few variations on this, but don't seem to be getting good results.
 ```
-solution = solve(equations, vars, warn=True, dict=True, rational=True, check=False)
+solution = solve(equations, vars, dict=True)
 ```
 
 An interesting note, replacing `vars` with `vars.reverse()` causes no solutions to be found.  I think what's happening here is that solve doesn't find an exhaustive list, and vars/vars.reverse changes the order the variables are used to calculate Gröbner basis. 
