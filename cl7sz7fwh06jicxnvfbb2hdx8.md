@@ -22,6 +22,8 @@ The full code can be found [here](https://colab.research.google.com/gist/jimmieb
 
 TrainX is limited to first 100 training data points to speed things up, note this probably makes things harder on the accuracy side.  I was hoping the training loss function calculation would be O(1), but it seems to slow down as the loss function as built.  I thought it would be constant time since I think the terms would be able to be combined after expansion to the loss function the same size as more data is added.  On a related note, calling `expand` on the loss function causes OOM.  
 
+Also, the polynomial solver seems to always return 0-1 solutions.  The existing code I'd expect is more finding critical points which could also be a local maximum, however without checking if it's a max or min, it seems to always be less than the existing networks loss.  Maybe as training progresses the check would need to be added.  I'm not sure why 0-1 are being returned though.
+
 
 ## Results
 
