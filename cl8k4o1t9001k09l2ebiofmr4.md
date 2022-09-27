@@ -30,10 +30,14 @@ To expand the linear layer, we need new weights for calculating the node, as wel
 
 The code for this would look something like
 ```
-next_layer.weight = cat((next_layer.weight, zeroes(self.output_dims, new_nodes)), dim=1)
-expanded_layer.weight = cat( (expanded_layer.weight, rand(new_nodes, )) )
-expanded_layer.bias = cat( (expanded_layer.bias, zeroes(new_nodes, )) )
+
+      self.linear2.weight = torch.nn.Parameter(torch.cat((self.linear2.weight, torch.zeros(self.output_dims, new_node_count)), dim=1))
+      
+      self.linear.weight = torch.nn.Parameter(torch.cat((self.linear.weight, torch.rand(new_node_count, 2)), dim=0))
+      self.linear.bias = torch.nn.Parameter(torch.cat((self.linear.bias, torch.zeros(new_node_count))))
 ```
+
+A fully working minimal example of this can be found [here](https://colab.research.google.com/gist/jimmiebtlr/a4f59dffe0d1882b84bda215b18272a9/ontheflylinearexpansion.ipynb).
 
 Let's review this against our goals.
 
